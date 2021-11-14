@@ -26,11 +26,7 @@
         })
     "
     @select="(v) => addCity(v)"
-  >
-    <template #option="props">
-      <div class="AAAAA" :key="phrase.length">{{ props.option.label }}</div>
-    </template>
-  </vue-multiselect>
+  />
 </template>
 
 <script>

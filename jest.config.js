@@ -3,4 +3,10 @@ module.exports = {
   transform: {
     "^.+\\.vue$": "vue-jest",
   },
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/src/$1",
+  },
+  snapshotSerializers: ["jest-serializer-vue"],
+  testMatch: ["<rootDir>/tests/unit/@(*.)@(spec.js)"],
+  transformIgnorePatterns: ["<rootDir>/node_modules/(?!vue-multiselect)"],
 };
